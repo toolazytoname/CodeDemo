@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MainTableViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
+@property (strong, nonatomic) MainTableViewController *mainTableViewController;
 
 @end
 
@@ -17,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Code Demo";
+    [self initialTableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +29,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)initialTableView
+{
+    self.mainTableView.delegate = self.mainTableViewController;
+    self.mainTableView.dataSource = self.mainTableViewController;
+}
+
+#pragma mark - lazy load
+- (MainTableViewController *)mainTableViewController
+{
+    if (!_mainTableViewController) {
+        self.mainTableViewController=[[MainTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        NSString *mainMenueConfigFilePath = [[NSBundle mainBundle] pathForResource:@"MainMenu" ofType:@"plist"];
+        if (mainMenueConfigFilePath) {
+            self.mainTableViewController.mainMenueConfigArray = [NSArray arrayWithContentsOfFile:mainMenueConfigFilePath];
+        }
+    }
+    return _mainTableViewController;
+}
 @end

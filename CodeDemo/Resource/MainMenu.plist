@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>Title</key>
+		<string>动画效果相关section</string>
+		<key>Elements</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>cellTitle1</string>
+				<key>ViewController</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</array>
 </plist>
