@@ -14,9 +14,9 @@
 		443A127B1B2DC30B0022C5E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443A127A1B2DC30B0022C5E5 /* Images.xcassets */; };
 		443A127E1B2DC30B0022C5E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443A127C1B2DC30B0022C5E5 /* LaunchScreen.xib */; };
 		443A128A1B2DC30B0022C5E5 /* CodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A12891B2DC30B0022C5E5 /* CodeDemoTests.m */; };
-		4476E0D51B3F9F2900B2E62A /* MainMenu.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4476E0D41B3F9F2900B2E62A /* MainMenu.txt */; };
 		4476E0D91B3FA45400B2E62A /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4476E0D81B3FA45400B2E62A /* MainTableViewController.m */; };
 		4476E0DB1B3FB3A800B2E62A /* MainMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4476E0DA1B3FB3A800B2E62A /* MainMenu.plist */; };
+		4476E0DF1B40B4A300B2E62A /* AnimationsExplainedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */; };
 		546C3988C228887F6CDEB4B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A238E8F033300F4436A3129A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +45,11 @@
 		443A12831B2DC30B0022C5E5 /* CodeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		443A12881B2DC30B0022C5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443A12891B2DC30B0022C5E5 /* CodeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeDemoTests.m; sourceTree = "<group>"; };
-		4476E0D41B3F9F2900B2E62A /* MainMenu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MainMenu.txt; sourceTree = "<group>"; };
 		4476E0D71B3FA45400B2E62A /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		4476E0D81B3FA45400B2E62A /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		4476E0DA1B3FB3A800B2E62A /* MainMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainMenu.plist; sourceTree = "<group>"; };
+		4476E0DD1B40B4A300B2E62A /* AnimationsExplainedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsExplainedViewController.h; sourceTree = "<group>"; };
+		4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsExplainedViewController.m; sourceTree = "<group>"; };
 		448A5BB02C28786A80C03A7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A238E8F033300F4436A3129A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,7 +173,6 @@
 		4476E0D11B3F9E0600B2E62A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				4476E0D41B3F9F2900B2E62A /* MainMenu.txt */,
 				4476E0DA1B3FB3A800B2E62A /* MainMenu.plist */,
 			);
 			path = Resource;
@@ -197,8 +197,18 @@
 			children = (
 				4476E0D71B3FA45400B2E62A /* MainTableViewController.h */,
 				4476E0D81B3FA45400B2E62A /* MainTableViewController.m */,
+				4476E0DC1B40B48500B2E62A /* Animation */,
 			);
 			path = MainTableViewController;
+			sourceTree = "<group>";
+		};
+		4476E0DC1B40B48500B2E62A /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				4476E0DD1B40B4A300B2E62A /* AnimationsExplainedViewController.h */,
+				4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		8643D24DF84532826C48453F /* Pods */ = {
@@ -301,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4476E0DB1B3FB3A800B2E62A /* MainMenu.plist in Resources */,
-				4476E0D51B3F9F2900B2E62A /* MainMenu.txt in Resources */,
 				443A12791B2DC30B0022C5E5 /* Main.storyboard in Resources */,
 				443A127E1B2DC30B0022C5E5 /* LaunchScreen.xib in Resources */,
 				443A127B1B2DC30B0022C5E5 /* Images.xcassets in Resources */,
@@ -359,6 +368,7 @@
 				443A12761B2DC30B0022C5E5 /* ViewController.m in Sources */,
 				443A12731B2DC30B0022C5E5 /* AppDelegate.m in Sources */,
 				443A12701B2DC30B0022C5E5 /* main.m in Sources */,
+				4476E0DF1B40B4A300B2E62A /* AnimationsExplainedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

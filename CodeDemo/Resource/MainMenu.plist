@@ -11,7 +11,13 @@
 				<key>Title</key>
 				<string>cellTitle1</string>
 				<key>ViewController</key>
-				<string></string>
+				<string>AnimationsExplainedViewController</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>cellTitle1</string>
+				<key>ViewController</key>
+				<string>CoreAnimationViewController</string>
 			</dict>
 		</array>
 	</dict>

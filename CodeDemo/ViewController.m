@@ -43,6 +43,12 @@
         NSString *mainMenueConfigFilePath = [[NSBundle mainBundle] pathForResource:@"MainMenu" ofType:@"plist"];
         if (mainMenueConfigFilePath) {
             self.mainTableViewController.mainMenueConfigArray = [NSArray arrayWithContentsOfFile:mainMenueConfigFilePath];
+            __weak __typeof(self)weakSelf = self;
+            self.mainTableViewController.didSelectRowBlock = ^(UIViewController *viewController)
+            {
+                __strong __typeof(weakSelf)strongSelf = weakSelf;
+                [strongSelf.navigationController pushViewController:viewController animated:YES];
+            };
         }
     }
     return _mainTableViewController;

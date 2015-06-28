@@ -10,4 +10,5 @@
 
 @interface MainTableViewController : UITableViewController
 @property (strong, nonatomic) NSArray *mainMenueConfigArray;
+@property (copy,nonatomic) void (^didSelectRowBlock)(UIViewController *viewController);
 @end

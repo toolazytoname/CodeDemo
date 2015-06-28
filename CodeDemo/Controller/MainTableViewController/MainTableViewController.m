@@ -8,6 +8,11 @@
 
 #import "MainTableViewController.h"
 
+//cell element keys
+#define kElementTitle @"Title"
+#define kElemetViewController @"ViewController"
+
+
 @interface MainTableViewController ()
 
 @end
@@ -32,57 +37,42 @@
 #pragma mark -
 #pragma mark  UITableViewDataSource Methods
 
-//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//    return  [[self.dataDictionary objectForKey:@"Root"] count]>0?[[self.dataDictionary objectForKey:@"Root"] count]:1;
-//    //    return 0;
-//}
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    
-//    //        return 0;
-//    NSArray *elements=[[[self.dataDictionary objectForKey:@"Root"] objectAtIndex:section] objectForKey:@"Elements"];
-//    return  [elements count];
-//    
-//}
-//
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *MainTableIdentifier=@"MainTableIdentifier";
-//    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:MainTableIdentifier];
-//    if (cell==nil) {
-//        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MainTableIdentifier];
-//    }
-//    NSArray *elements=[[[self.dataDictionary objectForKey:@"Root"] objectAtIndex:indexPath.section] objectForKey:@"Elements"];
-//    NSDictionary *element=[elements objectAtIndex:indexPath.row];
-//    cell.textLabel.text=[element objectForKey:TitleKey];
-//    return cell;
-//}
-//
-//
-//#pragma mark -
-//#pragma mark UITableViewDelegate Methods
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSArray *elements=[[[self.dataDictionary objectForKey:@"Root"] objectAtIndex:indexPath.section] objectForKey:@"Elements"];
-//    NSDictionary *element=[elements objectAtIndex:indexPath.row];
-//    NSString *viewControllerName=[element objectForKey:ViewControllerNameKEY];
-//    NSString *contentUrl=[element objectForKey:ContentKey];
-//    NSString *nibName=[element objectForKey:NibNameKey];
-//    NSString *viewControllerFileName=[NSString stringWithFormat:@"%@",viewControllerName];
-//    UIViewController*  viewController=[[NSClassFromString(viewControllerFileName) alloc] initWithNibName:nibName bundle:nil];
-//    viewController.title=[element objectForKey:TitleKey];
-//    if ([viewControllerName isEqualToString:@"ListOfOneCartoonViewController"]) {
-//        ListOfOneCartoonViewController   *myListOfOneCartoonViewController=(ListOfOneCartoonViewController *)viewController;
-//        myListOfOneCartoonViewController.elementDic= element;
-//    }
-//    [self.currentViewController.navigationController pushViewController:viewController animated:YES];
-//    if([viewControllerName isEqualToString:PDFViewController])
-//    {
-//        [viewController performSelector:@selector(loadPDf:) withObject:contentUrl];
-//    }
-//    
-//    
-//}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return  self.mainMenueConfigArray.count;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    NSArray *elements=[[self.mainMenueConfigArray objectAtIndex:section] objectForKey:@"Elements"];
+    return  [elements count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *MainTableIdentifier=@"MainTableViewControllerIdentifier";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:MainTableIdentifier];
+    if (cell==nil) {
+        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MainTableIdentifier];
+    }
+    NSArray *elements=[[self.mainMenueConfigArray objectAtIndex:indexPath.section] objectForKey:@"Elements"];
+    NSDictionary *element=[elements objectAtIndex:indexPath.row];
+    cell.textLabel.text=[element objectForKey:kElementTitle];
+    return cell;
+}
+
+#pragma mark -
+#pragma mark UITableViewDelegate Methods
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *elements=[[self.mainMenueConfigArray objectAtIndex:indexPath.section] objectForKey:@"Elements"];
+    NSDictionary *element=[elements objectAtIndex:indexPath.row];
+    NSString *viewControllerName=[element objectForKey:kElemetViewController];
+    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *viewController = [mainStoryBoard instantiateViewControllerWithIdentifier:viewControllerName];
+    if (self.didSelectRowBlock) {
+        self.didSelectRowBlock(viewController);
+    }
+}
 
 @end
