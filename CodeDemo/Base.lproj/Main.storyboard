@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DrJ-As-y9F">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -44,15 +45,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXD-yf-Df2">
-                                <rect key="frame" x="279" y="132" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mlc-eg-bUP">
+                                <rect key="frame" x="0.0" y="150" width="171" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="00F-IB-6GT"/>
+                                    <constraint firstAttribute="width" constant="171" id="CZo-jT-mwd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flx-Ne-cI3">
+                                <rect key="frame" x="16" y="359" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Uv4-Sd-uLf"/>
+                                    <constraint firstAttribute="width" constant="31" id="oKf-gz-zYW"/>
+                                </constraints>
+                                <state key="normal" title="start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="Q0O-pv-AO5" eventType="touchUpInside" id="fey-JZ-Ioy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IlZ-BO-bHu">
+                                <rect key="frame" x="0.0" y="244" width="171" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="3QT-dt-4r5"/>
+                                    <constraint firstAttribute="width" constant="171" id="PC9-gx-Mpo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="SqF-iT-ZGi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="eC5-qp-8za"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Flx-Ne-cI3" firstAttribute="leading" secondItem="7NF-hW-fhM" secondAttribute="leadingMargin" id="HaJ-Qv-xxx"/>
+                            <constraint firstItem="IlZ-BO-bHu" firstAttribute="top" secondItem="Mlc-eg-bUP" secondAttribute="bottom" constant="18" id="JYm-5m-1Vc"/>
+                            <constraint firstItem="Flx-Ne-cI3" firstAttribute="top" secondItem="Mlc-eg-bUP" secondAttribute="bottom" constant="133" id="NE4-4i-Dl8"/>
+                            <constraint firstItem="Mlc-eg-bUP" firstAttribute="leading" secondItem="7NF-hW-fhM" secondAttribute="leadingMargin" constant="-16" id="PuR-el-Dp9"/>
+                            <constraint firstItem="IlZ-BO-bHu" firstAttribute="leading" secondItem="7NF-hW-fhM" secondAttribute="leadingMargin" constant="-16" id="WST-Ks-Y6j"/>
+                            <constraint firstItem="Mlc-eg-bUP" firstAttribute="top" secondItem="7NF-hW-fhM" secondAttribute="topMargin" constant="150" id="tj0-f4-gGs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rocket1" destination="Mlc-eg-bUP" id="9VC-mb-Gb6"/>
+                        <outlet property="rocket2" destination="IlZ-BO-bHu" id="aMv-Z7-CN2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Q4-I8-b7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,4 +113,7 @@
             <point key="canvasLocation" x="305" y="1048"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rocket.jpg" width="453" height="220"/>
+    </resources>
 </document>

@@ -17,6 +17,7 @@
 		4476E0D91B3FA45400B2E62A /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4476E0D81B3FA45400B2E62A /* MainTableViewController.m */; };
 		4476E0DB1B3FB3A800B2E62A /* MainMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4476E0DA1B3FB3A800B2E62A /* MainMenu.plist */; };
 		4476E0DF1B40B4A300B2E62A /* AnimationsExplainedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */; };
+		44DD577F1B496BF8009FAE15 /* rocket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44DD577E1B496BF8009FAE15 /* rocket.jpg */; };
 		546C3988C228887F6CDEB4B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A238E8F033300F4436A3129A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		4476E0DD1B40B4A300B2E62A /* AnimationsExplainedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsExplainedViewController.h; sourceTree = "<group>"; };
 		4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsExplainedViewController.m; sourceTree = "<group>"; };
 		448A5BB02C28786A80C03A7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		44DD577E1B496BF8009FAE15 /* rocket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rocket.jpg; sourceTree = "<group>"; };
 		A238E8F033300F4436A3129A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -207,6 +209,7 @@
 			children = (
 				4476E0DD1B40B4A300B2E62A /* AnimationsExplainedViewController.h */,
 				4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */,
+				44DD577E1B496BF8009FAE15 /* rocket.jpg */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4476E0DB1B3FB3A800B2E62A /* MainMenu.plist in Resources */,
+				44DD577F1B496BF8009FAE15 /* rocket.jpg in Resources */,
 				443A12791B2DC30B0022C5E5 /* Main.storyboard in Resources */,
 				443A127E1B2DC30B0022C5E5 /* LaunchScreen.xib in Resources */,
 				443A127B1B2DC30B0022C5E5 /* Images.xcassets in Resources */,
