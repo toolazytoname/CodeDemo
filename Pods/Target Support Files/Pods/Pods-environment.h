@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_MJRefresh 2
 #define COCOAPODS_VERSION_PATCH_MJRefresh 0
 
+// RBBAnimation
+#define COCOAPODS_POD_AVAILABLE_RBBAnimation
+#define COCOAPODS_VERSION_MAJOR_RBBAnimation 0
+#define COCOAPODS_VERSION_MINOR_RBBAnimation 4
+#define COCOAPODS_VERSION_PATCH_RBBAnimation 0
+
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3

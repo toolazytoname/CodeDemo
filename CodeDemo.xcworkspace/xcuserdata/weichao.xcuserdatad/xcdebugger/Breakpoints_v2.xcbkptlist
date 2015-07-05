@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeDemo/Controller/MainTableViewController/Animation/AnimationsExplainedViewController.m"
-            timestampString = "457801590.007414"
+            timestampString = "457803920.402551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-basicAnimation"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeDemo/Controller/MainTableViewController/Animation/AnimationsExplainedViewController.m"
-            timestampString = "457801632.883028"
+            timestampString = "457803920.402551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "-animation_Along_A_Path"
             landmarkType = "5">
          </BreakpointContent>

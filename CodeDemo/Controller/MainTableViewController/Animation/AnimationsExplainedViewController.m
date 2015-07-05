@@ -15,6 +15,7 @@
  https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CoreAnimation_guide/Key-ValueCodingExtensions/Key-ValueCodingExtensions.html
  */
 #import "AnimationsExplainedViewController.h"
+#import "RBBTweenAnimation.h"
 
 @interface AnimationsExplainedViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *rocket1;
@@ -39,7 +40,9 @@
 //    [self basicAnimation];
 //    [self basicAnimation2];
 //    [self multiStageAnimation];
-    [self animation_Along_A_Path];
+//    [self animation_Along_A_Path];
+//    [self timingFunction];
+    [self RBBAnimation];
 }
 
 #pragma mark - animation demo method
@@ -115,5 +118,38 @@ update the property directly on the model layer
     [self.rocket1.layer addAnimation:orbit forKey:@"orbit"];
 }
 
+- (void)timingFunction
+{
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"position.x";
+    animation.fromValue = @50;
+    animation.toValue = @150;
+    animation.duration = 1;
+    
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    
+    //Bézier curve
+    animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.5 :0 :0.9 :0.7];
+    
+    [self.rocket1.layer addAnimation:animation forKey:@"basic"];
+    self.rocket1.layer.position = CGPointMake(150, 150);
+}
+
+- (void)RBBAnimation
+{
+    RBBTweenAnimation *animation = [RBBTweenAnimation animation];
+    animation.keyPath = @"position.y";
+    animation.fromValue = @50;
+    animation.toValue = @150;
+    animation.duration = 1;
+    animation.easing = RBBEasingFunctionEaseOutBounce;
+    
+    animation.easing = RBBEasingFunctionEaseOutBounce;
+    
+    [self.rocket1.layer addAnimation:animation forKey:@"RBBTweenAnimation"];
+}
+
+- (void)animationGroups
+{}
 
 @end
