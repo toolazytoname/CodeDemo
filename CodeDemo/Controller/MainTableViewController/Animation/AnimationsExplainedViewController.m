@@ -42,7 +42,9 @@
 //    [self multiStageAnimation];
 //    [self animation_Along_A_Path];
 //    [self timingFunction];
-    [self RBBAnimation];
+//    [self RBBAnimation];
+//    [self animationGroups];
+    [self copyfromWeb];
 }
 
 #pragma mark - animation demo method
@@ -148,8 +150,86 @@ update the property directly on the model layer
     
     [self.rocket1.layer addAnimation:animation forKey:@"RBBTweenAnimation"];
 }
-
+//TODO: 没有实现
 - (void)animationGroups
-{}
+{
+    CABasicAnimation *zPosition = [CABasicAnimation animation];
+    zPosition.keyPath = @"zPosition";
+    zPosition.fromValue = @-1;
+    zPosition.toValue = @1;
+    zPosition.duration = 1.2;
+    
+    CAKeyframeAnimation *rotation = [CAKeyframeAnimation animation];
+    rotation.keyPath = @"transform.rotation";
+    rotation.values = @[@0,@0.14,@0];
+    rotation.timingFunctions = @[
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]
+                                 ];
+    
+    CAKeyframeAnimation *position =[CAKeyframeAnimation animation];
+    position.keyPath = @"position";
+    position.values = @[
+                        [NSValue valueWithCGPoint:CGPointZero],
+                        [NSValue valueWithCGPoint:CGPointMake(110, -20)],
+                        [NSValue valueWithCGPoint:CGPointZero]
+                        ];
+    position.timingFunctions = @[
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]
+                                 ];
+    position.additive = YES;
+    position.duration = 1.2;
+    
+    CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
+    group.animations = @[zPosition,rotation,position];
+    group.duration = 1.2;
+    group.beginTime = 0.5;
+    
+    [self.rocket1.layer addAnimation:group forKey:@"shuffle"];
+    self.rocket1.layer.zPosition = 1;
+    
+}
+
+- (void)copyfromWeb
+{
+    CABasicAnimation *zPosition = [CABasicAnimation animation];
+    zPosition.keyPath = @"zPosition";
+    zPosition.fromValue = @-1;
+    zPosition.toValue = @1;
+    zPosition.duration = 1.2;
+    
+    CAKeyframeAnimation *rotation = [CAKeyframeAnimation animation];
+    rotation.keyPath = @"transform.rotation";
+    rotation.values = @[ @0, @0.14, @0 ];
+    rotation.duration = 1.2;
+    rotation.timingFunctions = @[
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]
+                                 ];
+    
+    CAKeyframeAnimation *position = [CAKeyframeAnimation animation];
+    position.keyPath = @"position";
+    position.values = @[
+                        [NSValue valueWithCGPoint:CGPointZero],
+                        [NSValue valueWithCGPoint:CGPointMake(110, -20)],
+                        [NSValue valueWithCGPoint:CGPointZero]
+                        ];
+    position.timingFunctions = @[
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                 [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]
+                                 ];
+    position.additive = YES;
+    position.duration = 1.2;
+    
+    CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
+    group.animations = @[ zPosition, rotation, position ];
+    group.duration = 1.2;
+    group.beginTime = 0.5;
+    
+    [self.rocket1.layer addAnimation:group forKey:@"shuffle"];
+    
+    self.rocket1.layer.zPosition = 1;
+}
 
 @end

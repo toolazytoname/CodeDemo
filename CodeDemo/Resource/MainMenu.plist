@@ -15,9 +15,9 @@
 			</dict>
 			<dict>
 				<key>Title</key>
-				<string>cellTitle1</string>
+				<string>Animating the Drawing of a CGPath With CAShapeLayer</string>
 				<key>ViewController</key>
-				<string>CoreAnimationViewController</string>
+				<string>CAShapeLayerDrawingViewController</string>
 			</dict>
 		</array>
 	</dict>

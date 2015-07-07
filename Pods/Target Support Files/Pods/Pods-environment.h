@@ -96,6 +96,12 @@
 #define COCOAPODS_VERSION_MINOR_UIActivityIndicator_for_SDWebImage 2
 #define COCOAPODS_VERSION_PATCH_UIActivityIndicator_for_SDWebImage 0
 
+// pop
+#define COCOAPODS_POD_AVAILABLE_pop
+#define COCOAPODS_VERSION_MAJOR_pop 1
+#define COCOAPODS_VERSION_MINOR_pop 0
+#define COCOAPODS_VERSION_PATCH_pop 7
+
 // uidevice-extension
 #define COCOAPODS_POD_AVAILABLE_uidevice_extension
 #define COCOAPODS_VERSION_MAJOR_uidevice_extension 0
