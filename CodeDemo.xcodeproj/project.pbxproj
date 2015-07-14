@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343BCD541B54E89D00877CC7 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 343BCD511B54E89D00877CC7 /* UIScrollView+SVInfiniteScrolling.m */; };
+		343BCD551B54E89D00877CC7 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 343BCD531B54E89D00877CC7 /* UIScrollView+SVPullToRefresh.m */; };
 		443A12701B2DC30B0022C5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A126F1B2DC30B0022C5E5 /* main.m */; };
 		443A12731B2DC30B0022C5E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A12721B2DC30B0022C5E5 /* AppDelegate.m */; };
 		443A12761B2DC30B0022C5E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A12751B2DC30B0022C5E5 /* ViewController.m */; };
@@ -36,6 +38,11 @@
 
 /* Begin PBXFileReference section */
 		26E9E7BBC3BBE5BFFE65BCEF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		343BCD4F1B54E89D00877CC7 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		343BCD501B54E89D00877CC7 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		343BCD511B54E89D00877CC7 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		343BCD521B54E89D00877CC7 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		343BCD531B54E89D00877CC7 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		443A126A1B2DC30B0022C5E5 /* CodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443A126E1B2DC30B0022C5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443A126F1B2DC30B0022C5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343BCD4E1B54E89D00877CC7 /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				343BCD4F1B54E89D00877CC7 /* SVPullToRefresh.h */,
+				343BCD501B54E89D00877CC7 /* UIScrollView+SVInfiniteScrolling.h */,
+				343BCD511B54E89D00877CC7 /* UIScrollView+SVInfiniteScrolling.m */,
+				343BCD521B54E89D00877CC7 /* UIScrollView+SVPullToRefresh.h */,
+				343BCD531B54E89D00877CC7 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			name = SVPullToRefresh;
+			path = "../../../../../../../my_mac/Downloads/SVPlatform 2/iPhoneVideo/Classes/controller/BaseViewController/PKTableView/View/SVPullToRefresh";
+			sourceTree = "<group>";
+		};
 		443A12611B2DC30B0022C5E5 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +211,7 @@
 		4476E0D21B3F9E0600B2E62A /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				343BCD4E1B54E89D00877CC7 /* SVPullToRefresh */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -394,6 +415,8 @@
 				44DD57821B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m in Sources */,
 				443A12761B2DC30B0022C5E5 /* ViewController.m in Sources */,
 				443A12731B2DC30B0022C5E5 /* AppDelegate.m in Sources */,
+				343BCD541B54E89D00877CC7 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				343BCD551B54E89D00877CC7 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				443A12701B2DC30B0022C5E5 /* main.m in Sources */,
 				44DD57881B4C1986009FAE15 /* LowLevelConcurrencyAPIController.m in Sources */,
 				4476E0DF1B40B4A300B2E62A /* AnimationsExplainedViewController.m in Sources */,
@@ -526,6 +549,7 @@
 				INFOPLIST_FILE = CodeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37778d51-21c8-4fdb-904c-f889abfdc8ca";
 			};
 			name = Debug;
 		};
@@ -537,6 +561,7 @@
 				INFOPLIST_FILE = CodeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37778d51-21c8-4fdb-904c-f889abfdc8ca";
 			};
 			name = Release;
 		};
