@@ -10,6 +10,8 @@
 	<string>CodeDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>22EE05C3F18B7697B4311EAEAAA0F8B998E0D69A</key>
+		<string>https://github.com/opensource-apple/CF</string>
 		<key>87C0F75E4F354341FCA3703BE3634470D4E6A88F</key>
 		<string>https://github.com/toolazytoname/CodeDemo.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>CodeDemo.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>22EE05C3F18B7697B4311EAEAAA0F8B998E0D69A</key>
+		<string>../../../downLoadDemo/CF</string>
 		<key>87C0F75E4F354341FCA3703BE3634470D4E6A88F</key>
 		<string>..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>87C0F75E4F354341FCA3703BE3634470D4E6A88F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22EE05C3F18B7697B4311EAEAAA0F8B998E0D69A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CF</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

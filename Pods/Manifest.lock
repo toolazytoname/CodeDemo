@@ -29,6 +29,7 @@ PODS:
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
+  - SVPullToRefresh (0.4.1)
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - uidevice-extension (0.0.4)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - Reachability
   - SDURLCache
   - SDWebImage
+  - SVPullToRefresh
   - UIActivityIndicator-for-SDWebImage
   - uidevice-extension
 
@@ -54,6 +56,7 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDURLCache: 8b271cce7263032f6345b6dc838dea23c98844ac
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   uidevice-extension: ee0887ac1d2de494706750734059a4fcb89df51d
 
