@@ -56,7 +56,6 @@
 		4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsExplainedViewController.m; sourceTree = "<group>"; };
 		448A5BB02C28786A80C03A7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		44B97C2A1B5D208600AABFFB /* APPLE_LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
-		44B97C2B1B5D208600AABFFB /* CF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CF.xcodeproj; sourceTree = "<group>"; };
 		44B97C2E1B5D208600AABFFB /* CFApplicationPreferences.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFApplicationPreferences.c; sourceTree = "<group>"; };
 		44B97C2F1B5D208600AABFFB /* CFArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFArray.c; sourceTree = "<group>"; };
 		44B97C301B5D208600AABFFB /* CFArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFArray.h; sourceTree = "<group>"; };
@@ -394,7 +393,6 @@
 			isa = PBXGroup;
 			children = (
 				44B97C2A1B5D208600AABFFB /* APPLE_LICENSE */,
-				44B97C2B1B5D208600AABFFB /* CF.xcodeproj */,
 				44B97C2E1B5D208600AABFFB /* CFApplicationPreferences.c */,
 				44B97C2F1B5D208600AABFFB /* CFArray.c */,
 				44B97C301B5D208600AABFFB /* CFArray.h */,
@@ -560,11 +558,6 @@
 			path = CF;
 			sourceTree = "<group>";
 		};
-		44B97C2C1B5D208600AABFFB /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
 		44B97CC41B5D208600AABFFB /* Examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,12 +661,6 @@
 			mainGroup = 443A12611B2DC30B0022C5E5;
 			productRefGroup = 443A126B1B2DC30B0022C5E5 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 44B97C2C1B5D208600AABFFB /* Products */;
-					ProjectRef = 44B97C2B1B5D208600AABFFB /* CF.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				443A12691B2DC30B0022C5E5 /* CodeDemo */,
