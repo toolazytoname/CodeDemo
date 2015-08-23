@@ -19,6 +19,18 @@
 				<key>ViewController</key>
 				<string>CAShapeLayerDrawingViewController</string>
 			</dict>
+			<dict>
+				<key>Title</key>
+				<string>layer test demo</string>
+				<key>ViewController</key>
+				<string>LayerTestViewController</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Frame And Bounds</string>
+				<key>ViewController</key>
+				<string>FrameAndBoundsDemoViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

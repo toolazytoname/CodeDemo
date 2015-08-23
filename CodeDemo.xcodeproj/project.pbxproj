@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44299A5E1B65111F000780DC /* LayerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44299A5D1B65111F000780DC /* LayerTestViewController.m */; };
 		443A12701B2DC30B0022C5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A126F1B2DC30B0022C5E5 /* main.m */; };
 		443A12731B2DC30B0022C5E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A12721B2DC30B0022C5E5 /* AppDelegate.m */; };
 		443A12761B2DC30B0022C5E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A12751B2DC30B0022C5E5 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 		4476E0D91B3FA45400B2E62A /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4476E0D81B3FA45400B2E62A /* MainTableViewController.m */; };
 		4476E0DB1B3FB3A800B2E62A /* MainMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4476E0DA1B3FB3A800B2E62A /* MainMenu.plist */; };
 		4476E0DF1B40B4A300B2E62A /* AnimationsExplainedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */; };
+		447D9C3B1B89FF2200CB83AC /* FrameAndBoundsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 447D9C3A1B89FF2200CB83AC /* FrameAndBoundsDemoViewController.m */; };
+		44B97CD31B5D403600AABFFB /* RuntimeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B97CD21B5D403600AABFFB /* RuntimeDemoViewController.m */; };
 		44DD577F1B496BF8009FAE15 /* rocket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44DD577E1B496BF8009FAE15 /* rocket.jpg */; };
 		44DD57821B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DD57811B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m */; };
 		44DD57841B4C114B009FAE15 /* noun_project_347_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DD57831B4C114B009FAE15 /* noun_project_347_2.png */; };
@@ -36,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		26E9E7BBC3BBE5BFFE65BCEF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		44299A5C1B65111F000780DC /* LayerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTestViewController.h; sourceTree = "<group>"; };
+		44299A5D1B65111F000780DC /* LayerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerTestViewController.m; sourceTree = "<group>"; };
 		443A126A1B2DC30B0022C5E5 /* CodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443A126E1B2DC30B0022C5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443A126F1B2DC30B0022C5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +59,8 @@
 		4476E0DA1B3FB3A800B2E62A /* MainMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainMenu.plist; sourceTree = "<group>"; };
 		4476E0DD1B40B4A300B2E62A /* AnimationsExplainedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsExplainedViewController.h; sourceTree = "<group>"; };
 		4476E0DE1B40B4A300B2E62A /* AnimationsExplainedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsExplainedViewController.m; sourceTree = "<group>"; };
+		447D9C391B89FF2200CB83AC /* FrameAndBoundsDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameAndBoundsDemoViewController.h; sourceTree = "<group>"; };
+		447D9C3A1B89FF2200CB83AC /* FrameAndBoundsDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameAndBoundsDemoViewController.m; sourceTree = "<group>"; };
 		448A5BB02C28786A80C03A7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		44B97C2A1B5D208600AABFFB /* APPLE_LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
 		44B97C2E1B5D208600AABFFB /* CFApplicationPreferences.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFApplicationPreferences.c; sourceTree = "<group>"; };
@@ -217,6 +224,8 @@
 		44B97CCD1B5D208700AABFFB /* README_CFLITE */ = {isa = PBXFileReference; lastKnownFileType = text; path = README_CFLITE; sourceTree = "<group>"; };
 		44B97CCE1B5D208700AABFFB /* SymbolAliases */ = {isa = PBXFileReference; lastKnownFileType = text; path = SymbolAliases; sourceTree = "<group>"; };
 		44B97CCF1B5D208700AABFFB /* TargetConditionals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetConditionals.h; sourceTree = "<group>"; };
+		44B97CD11B5D403600AABFFB /* RuntimeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDemoViewController.h; sourceTree = "<group>"; };
+		44B97CD21B5D403600AABFFB /* RuntimeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeDemoViewController.m; sourceTree = "<group>"; };
 		44DD577E1B496BF8009FAE15 /* rocket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rocket.jpg; sourceTree = "<group>"; };
 		44DD57801B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerDrawingViewController.h; sourceTree = "<group>"; };
 		44DD57811B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerDrawingViewController.m; sourceTree = "<group>"; };
@@ -370,6 +379,7 @@
 			children = (
 				4476E0D71B3FA45400B2E62A /* MainTableViewController.h */,
 				4476E0D81B3FA45400B2E62A /* MainTableViewController.m */,
+				44B97CD01B5D401400AABFFB /* Runtime */,
 				4476E0DC1B40B48500B2E62A /* Animation */,
 				44DD57851B4C1973009FAE15 /* Currency */,
 			);
@@ -384,7 +394,11 @@
 				44DD577E1B496BF8009FAE15 /* rocket.jpg */,
 				44DD57801B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.h */,
 				44DD57811B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m */,
+				44299A5C1B65111F000780DC /* LayerTestViewController.h */,
+				44299A5D1B65111F000780DC /* LayerTestViewController.m */,
 				44DD57831B4C114B009FAE15 /* noun_project_347_2.png */,
+				447D9C391B89FF2200CB83AC /* FrameAndBoundsDemoViewController.h */,
+				447D9C3A1B89FF2200CB83AC /* FrameAndBoundsDemoViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -566,6 +580,15 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
+		44B97CD01B5D401400AABFFB /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				44B97CD11B5D403600AABFFB /* RuntimeDemoViewController.h */,
+				44B97CD21B5D403600AABFFB /* RuntimeDemoViewController.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
 		44DD57851B4C1973009FAE15 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,10 +755,13 @@
 			files = (
 				4476E0D91B3FA45400B2E62A /* MainTableViewController.m in Sources */,
 				44DD57821B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m in Sources */,
+				447D9C3B1B89FF2200CB83AC /* FrameAndBoundsDemoViewController.m in Sources */,
+				44299A5E1B65111F000780DC /* LayerTestViewController.m in Sources */,
 				443A12761B2DC30B0022C5E5 /* ViewController.m in Sources */,
 				443A12731B2DC30B0022C5E5 /* AppDelegate.m in Sources */,
 				443A12701B2DC30B0022C5E5 /* main.m in Sources */,
 				44DD57881B4C1986009FAE15 /* LowLevelConcurrencyAPIController.m in Sources */,
+				44B97CD31B5D403600AABFFB /* RuntimeDemoViewController.m in Sources */,
 				4476E0DF1B40B4A300B2E62A /* AnimationsExplainedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
