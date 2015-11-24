@@ -4,20 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CodeDemo.xcscheme</key>
+		<key>StaticFrameworkDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>3</integer>
+		</dict>
+		<key>StaticFrameworkResource.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>443A12691B2DC30B0022C5E5</key>
+		<key>44F2D38E1C04012400E1939C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>443A12821B2DC30B0022C5E5</key>
+		<key>44F2D3981C04012400E1939C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44F2D3F31C0464B800E1939C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

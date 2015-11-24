@@ -7,4 +7,17 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "SubModules">
+      <FileRef
+         location = "group:SubModules/StaticLibraryDemo/StaticLibraryDemo.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SubModules/DynamicFrameworkDemo/DynamicFrameworkDemo/../../StaticFrameworkDemo/StaticFrameworkDemo/StaticFrameworkDemo.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SubModules/DynamicFrameworkDemo/DynamicFrameworkDemo/DynamicFrameworkDemo.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>

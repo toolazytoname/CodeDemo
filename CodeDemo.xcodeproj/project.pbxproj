@@ -24,6 +24,13 @@
 		44DD57821B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DD57811B4C0AA5009FAE15 /* CAShapeLayerDrawingViewController.m */; };
 		44DD57841B4C114B009FAE15 /* noun_project_347_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DD57831B4C114B009FAE15 /* noun_project_347_2.png */; };
 		44DD57881B4C1986009FAE15 /* LowLevelConcurrencyAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DD57871B4C1986009FAE15 /* LowLevelConcurrencyAPIController.m */; };
+		44F2D3BE1C0407B400E1939C /* ImageInModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F2D3BD1C0407B400E1939C /* ImageInModuleViewController.m */; };
+		44F2D3C81C0412FF00E1939C /* ImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F2D3C71C0412FF00E1939C /* ImageTool.m */; };
+		44F2D3CD1C043F6000E1939C /* libStaticLibraryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F2D3CB1C043CB400E1939C /* libStaticLibraryDemo.a */; };
+		44F2D3D71C0448D300E1939C /* DynamicFrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F2D3D61C0448D300E1939C /* DynamicFrameworkDemo.framework */; };
+		44F2D3D81C0448D300E1939C /* DynamicFrameworkDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44F2D3D61C0448D300E1939C /* DynamicFrameworkDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44F2D4391C04764A00E1939C /* StaticFrameworkResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 44F2D4381C04764A00E1939C /* StaticFrameworkResource.bundle */; };
+		44F2D43D1C0476DE00E1939C /* StaticLibraryResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 44F2D43C1C0476DE00E1939C /* StaticLibraryResource.bundle */; };
 		546C3988C228887F6CDEB4B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A238E8F033300F4436A3129A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +43,20 @@
 			remoteInfo = CodeDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44F2D3D91C0448D400E1939C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44F2D3D81C0448D300E1939C /* DynamicFrameworkDemo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		26E9E7BBC3BBE5BFFE65BCEF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +253,14 @@
 		44DD57831B4C114B009FAE15 /* noun_project_347_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_project_347_2.png; sourceTree = "<group>"; };
 		44DD57861B4C1986009FAE15 /* LowLevelConcurrencyAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowLevelConcurrencyAPIController.h; sourceTree = "<group>"; };
 		44DD57871B4C1986009FAE15 /* LowLevelConcurrencyAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowLevelConcurrencyAPIController.m; sourceTree = "<group>"; };
+		44F2D3BC1C0407B400E1939C /* ImageInModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInModuleViewController.h; sourceTree = "<group>"; };
+		44F2D3BD1C0407B400E1939C /* ImageInModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInModuleViewController.m; sourceTree = "<group>"; };
+		44F2D3C61C0412FF00E1939C /* ImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTool.h; sourceTree = "<group>"; };
+		44F2D3C71C0412FF00E1939C /* ImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTool.m; sourceTree = "<group>"; };
+		44F2D3CB1C043CB400E1939C /* libStaticLibraryDemo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStaticLibraryDemo.a; path = "../../../Library/Developer/Xcode/DerivedData/CodeDemo-gmotrypxtgyzyydhheatvzhsiosb/Build/Products/Debug-iphoneos/libStaticLibraryDemo.a"; sourceTree = "<group>"; };
+		44F2D3D61C0448D300E1939C /* DynamicFrameworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = DynamicFrameworkDemo.framework; path = "/Users/weichao/Library/Developer/Xcode/DerivedData/CodeDemo-gmotrypxtgyzyydhheatvzhsiosb/Build/Products/Debug-iphoneos/DynamicFrameworkDemo.framework"; sourceTree = "<absolute>"; };
+		44F2D4381C04764A00E1939C /* StaticFrameworkResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StaticFrameworkResource.bundle; sourceTree = "<group>"; };
+		44F2D43C1C0476DE00E1939C /* StaticLibraryResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StaticLibraryResource.bundle; sourceTree = "<group>"; };
 		A238E8F033300F4436A3129A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -240,6 +269,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F2D3CD1C043F6000E1939C /* libStaticLibraryDemo.a in Frameworks */,
+				44F2D3D71C0448D300E1939C /* DynamicFrameworkDemo.framework in Frameworks */,
 				546C3988C228887F6CDEB4B1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +288,8 @@
 		443A12611B2DC30B0022C5E5 = {
 			isa = PBXGroup;
 			children = (
+				44F2D43C1C0476DE00E1939C /* StaticLibraryResource.bundle */,
+				44F2D4381C04764A00E1939C /* StaticFrameworkResource.bundle */,
 				443A126C1B2DC30B0022C5E5 /* CodeDemo */,
 				443A12861B2DC30B0022C5E5 /* CodeDemoTests */,
 				443A126B1B2DC30B0022C5E5 /* Products */,
@@ -284,8 +317,8 @@
 				443A12771B2DC30B0022C5E5 /* Main.storyboard */,
 				443A127A1B2DC30B0022C5E5 /* Images.xcassets */,
 				443A127C1B2DC30B0022C5E5 /* LaunchScreen.xib */,
+				44F2D3C51C0412ED00E1939C /* General */,
 				4476E0CD1B3F9E0600B2E62A /* Controller */,
-				4476E0CE1B3F9E0600B2E62A /* General */,
 				4476E0CF1B3F9E0600B2E62A /* Macro */,
 				4476E0D01B3F9E0600B2E62A /* Model */,
 				4476E0D11B3F9E0600B2E62A /* Resource */,
@@ -330,13 +363,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		4476E0CE1B3F9E0600B2E62A /* General */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
 		4476E0CF1B3F9E0600B2E62A /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +405,7 @@
 			children = (
 				4476E0D71B3FA45400B2E62A /* MainTableViewController.h */,
 				4476E0D81B3FA45400B2E62A /* MainTableViewController.m */,
+				44F2D3BB1C0403C700E1939C /* FrameworkAndLibrary */,
 				44B97CD01B5D401400AABFFB /* Runtime */,
 				4476E0DC1B40B48500B2E62A /* Animation */,
 				44DD57851B4C1973009FAE15 /* Currency */,
@@ -598,6 +625,24 @@
 			path = Currency;
 			sourceTree = "<group>";
 		};
+		44F2D3BB1C0403C700E1939C /* FrameworkAndLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				44F2D3BC1C0407B400E1939C /* ImageInModuleViewController.h */,
+				44F2D3BD1C0407B400E1939C /* ImageInModuleViewController.m */,
+			);
+			path = FrameworkAndLibrary;
+			sourceTree = "<group>";
+		};
+		44F2D3C51C0412ED00E1939C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				44F2D3C61C0412FF00E1939C /* ImageTool.h */,
+				44F2D3C71C0412FF00E1939C /* ImageTool.m */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		8643D24DF84532826C48453F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +655,8 @@
 		F4E019200EBC4836F0B251E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44F2D3D61C0448D300E1939C /* DynamicFrameworkDemo.framework */,
+				44F2D3CB1C043CB400E1939C /* libStaticLibraryDemo.a */,
 				A238E8F033300F4436A3129A /* libPods.a */,
 			);
 			name = Frameworks;
@@ -627,6 +674,7 @@
 				443A12671B2DC30B0022C5E5 /* Frameworks */,
 				443A12681B2DC30B0022C5E5 /* Resources */,
 				27C7A3BA52150C4E02A58BD4 /* Copy Pods Resources */,
+				44F2D3D91C0448D400E1939C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -703,6 +751,8 @@
 				44DD57841B4C114B009FAE15 /* noun_project_347_2.png in Resources */,
 				443A127E1B2DC30B0022C5E5 /* LaunchScreen.xib in Resources */,
 				443A127B1B2DC30B0022C5E5 /* Images.xcassets in Resources */,
+				44F2D43D1C0476DE00E1939C /* StaticLibraryResource.bundle in Resources */,
+				44F2D4391C04764A00E1939C /* StaticFrameworkResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +809,8 @@
 				44299A5E1B65111F000780DC /* LayerTestViewController.m in Sources */,
 				443A12761B2DC30B0022C5E5 /* ViewController.m in Sources */,
 				443A12731B2DC30B0022C5E5 /* AppDelegate.m in Sources */,
+				44F2D3BE1C0407B400E1939C /* ImageInModuleViewController.m in Sources */,
+				44F2D3C81C0412FF00E1939C /* ImageTool.m in Sources */,
 				443A12701B2DC30B0022C5E5 /* main.m in Sources */,
 				44DD57881B4C1986009FAE15 /* LowLevelConcurrencyAPIController.m in Sources */,
 				44B97CD31B5D403600AABFFB /* RuntimeDemoViewController.m in Sources */,
@@ -889,10 +941,36 @@
 			baseConfigurationReference = 26E9E7BBC3BBE5BFFE65BCEF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SubModules/DynamicFrameworkDemo/DynamicFrameworkDemo/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/SubModules/StaticFrameworkDemo/StaticFrameworkDemo/build/Debug-iphoneos",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/RBBAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDURLCache\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVPullToRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/UIActivityIndicator-for-SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+					"\"${PODS_ROOT}/Headers/Public/uidevice-extension\"",
+					"SubModules/StaticLibraryDemo/**",
+				);
 				INFOPLIST_FILE = CodeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SubModules/StaticLibraryDemo/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37778d51-21c8-4fdb-904c-f889abfdc8ca";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -901,10 +979,36 @@
 			baseConfigurationReference = 448A5BB02C28786A80C03A7B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SubModules/DynamicFrameworkDemo/DynamicFrameworkDemo/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/SubModules/StaticFrameworkDemo/StaticFrameworkDemo/build/Debug-iphoneos",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/RBBAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/Reachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDURLCache\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVPullToRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/UIActivityIndicator-for-SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+					"\"${PODS_ROOT}/Headers/Public/uidevice-extension\"",
+					"SubModules/StaticLibraryDemo/**",
+				);
 				INFOPLIST_FILE = CodeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SubModules/StaticLibraryDemo/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37778d51-21c8-4fdb-904c-f889abfdc8ca";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
