@@ -9,10 +9,10 @@
 #import "ImageInModuleViewController.h"
 #import "ImageTool.h"
 #import "StaticLibraryDemo.h"
-#import <DynamicFrameworkDemo/DynamicFrameworkDemo.h>
+//#import <DynamicFrameworkDemo/DynamicFrameworkDemo.h>
 //#import <StaticLibraryDemo/StaticFrameworkClass.h>
 //#import <StaticLibraryBundle.bundle/
-#import <StaticFrameworkDemo/StaticFrameworkDemo.h>
+//#import <StaticFrameworkDemo/StaticFrameworkDemo.h>
 
 
 @interface ImageInModuleViewController ()
@@ -63,10 +63,10 @@
 }
 
 - (void)bundleDynamicFrameworkImage {
-    NSBundle *imageBundle = [NSBundle bundleForClass:[DynamicClass class]];
-    NSLog(@"dynamic bundle:%@",imageBundle);
-    UIImage *image = [UIImage imageNamed:@"BgScoreInDynamicFramework" inBundle:imageBundle compatibleWithTraitCollection:nil];
-    self.dynamicFrameworkImageView.image = image;
+//    NSBundle *imageBundle = [NSBundle bundleForClass:[DynamicClass class]];
+//    NSLog(@"dynamic bundle:%@",imageBundle);
+//    UIImage *image = [UIImage imageNamed:@"BgScoreInDynamicFramework" inBundle:imageBundle compatibleWithTraitCollection:nil];
+//    self.dynamicFrameworkImageView.image = image;
 }
 
 

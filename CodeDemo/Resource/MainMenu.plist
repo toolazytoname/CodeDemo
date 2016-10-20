@@ -59,5 +59,18 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>Title</key>
+		<string>interview</string>
+		<key>Elements</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>interview</string>
+				<key>ViewController</key>
+				<string>InterviewQuestionsViewController</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
